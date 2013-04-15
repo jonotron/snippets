@@ -16,3 +16,28 @@ snippet bbView
 	});
 
 	return $1;
+#describe test suite
+snippet desc
+	describe("${1:Test suite}", function() {
+		${2}
+	});
+#it test
+snippet it
+	it("${1:Should ...}", function() {
+		${2}	
+	});
+#it test async
+snippet itd
+	it("${1:Should ...}", function(done) {
+		${2}
+	});
+#before test
+snippet bef
+	before(function() {
+		${1}
+	});
+#beforeEach test
+snippet befe
+	beforeEach(function() {
+		${1}
+	});
