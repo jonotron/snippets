@@ -36,8 +36,18 @@ snippet bef
 	before(function() {
 		${1}
 	});
+#before async
+snippet befd
+	before(function(done) {
+		${1}
+	});
 #beforeEach test
 snippet befe
 	beforeEach(function() {
+		${1}
+	});
+#beforeEach async
+snippet befed
+	beforeEach(function(done) {
 		${1}
 	});
