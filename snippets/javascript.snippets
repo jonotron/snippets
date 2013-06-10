@@ -4,11 +4,9 @@ snippet def
 		${1}	
 	});
 # require module
-snippet vreq
+snippet req
 	var ${1:module} = require('${2:path}')${3:,}
 # require module w/o var
-snippet req
-	${1:module} = require('${2:path}')${3:,}
 # new backbone view
 snippet bbView
 	var ${1:view} = ${2:Backbone.View}.extend({
@@ -23,31 +21,17 @@ snippet desc
 	});
 #it test
 snippet it
-	it("${1:Should ...}", function() {
-		${2}	
+	it("${1:Should ...}", function(${2:done}) {
+		${3}	
 	});
 #it test async
-snippet itd
-	it("${1:Should ...}", function(done) {
-		${2}
-	});
 #before test
 snippet bef
-	before(function() {
-		${1}
-	});
-#before async
-snippet befd
-	before(function(done) {
-		${1}
+	before(function(${1:done}) {
+		${2}
 	});
 #beforeEach test
 snippet befe
-	beforeEach(function() {
-		${1}
-	});
-#beforeEach async
-snippet befed
-	beforeEach(function(done) {
-		${1}
+	beforeEach(function(${1:done}) {
+		${2}
 	});
