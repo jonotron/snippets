@@ -1,7 +1,7 @@
 # AMD module definition
 snippet def
 	define(function(require) {
-		${1}	
+	  ${1}	
 	});
 # require module
 snippet req
@@ -10,28 +10,28 @@ snippet req
 # new backbone view
 snippet bbView
 	var ${1:view} = ${2:Backbone.View}.extend({
-		${3}		
+	  ${3}		
 	});
 
 	return $1;
 #describe test suite
 snippet desc
 	describe("${1:Test suite}", function() {
-		${2}
-	});
+	  ${2}
+	}); // $1
 #it test
 snippet it
 	it("${1:Should ...}", function(${2:done}) {
-		${3}	
+	  ${3}	
 	});
 #it test async
 #before test
 snippet bef
 	before(function(${1:done}) {
-		${2}
+      ${2}
 	});
 #beforeEach test
 snippet befe
 	beforeEach(function(${1:done}) {
-		${2}
+	  ${2}
 	});
