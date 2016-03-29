@@ -1,36 +1,8 @@
-# AMD module definition
-snippet def
-	define(function(require) {
-	  ${1}	
-	});
-# require module
-snippet req
-	var ${1:module} = require('${2:path}');
-# new backbone view
-snippet bbView
-	var ${1:view} = ${2:Backbone.View}.extend({
-	  ${3}		
-	});
+snippet test
+	test('${1}', t => {
+		${2}	
+	})
 
-	return $1;
-#describe test suite
-snippet desc
-	describe('${1:Test suite}', function() {
-	  ${2}
-	}); // $1
-#it test
-snippet it
-	it('${1:Should ...}', function(${2:done}) {
-	  ${3}	
-	});
-#it test async
-#before test
-snippet bef
-	before(function(${1:done}) {
-      ${2}
-	});
-#beforeEach test
-snippet befe
-	beforeEach(function(${1:done}) {
-	  ${2}
-	});
+snippet cl
+	console.log(${1})
+
